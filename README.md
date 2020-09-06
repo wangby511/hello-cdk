@@ -13,3 +13,15 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
  * `cdk deploy`      deploy this stack to your default AWS account/region
  * `cdk diff`        compare deployed stack with current state
  * `cdk synth`       emits the synthesized CloudFormation template
+
+## Trouble shooting
+### Compile error: Argument of type 'this' is not assignable to parameter of type 'Construct'
+
+Fix: 
+Try to upgrade everything to latest version. https://github.com/aws/aws-cdk/issues/542
+Upgrade all the dependencies to @1.61.1 Ex: npm i @aws-cdk/aws-sqs@1.61.1
+
+ ## Reference
+ [1] https://docs.aws.amazon.com/cdk/latest/guide/hello_world.html
+ [2] https://docs.aws.amazon.com/cdk/latest/guide/ecs_example.html
+
